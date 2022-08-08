@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Image Gallary</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            b0x-sizing:border-box;
+        }
+        html,
+        body{
+            background: linear-gradient(45deg,#190f2c,#20b30);
+            padding:15px;
+
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .grid-wrapper>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-wrapper>div>img{
+            width: 100%;
+            height:100% ;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .grid-wrapper{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+        }
+        .grid-wrapper.wide{
+            grid-column: span2;
+        }
+        .grid-wrapper.tall{
+            grid-row: span2;
+        }.grid-wrapper.big{
+            grid-column: span2;
+            grid-row: span2;
+        }
+
+    </style>
+    <body>
+        <div class="grid-wrapper">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_XjitwQ0eh2aVlDbfk6HxvLgazVEjTuOSb_oD91AcQ&s"/>
+        </div>
+        <div>
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFLlWMBkzoH4o7vgpmpzkmn94cNHU97amOhogrWwsJKpjP46_YeVJgewLekLB_gX0Ztjw&usqp=CAU"/>
+        </div>
+        <div class="tall">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcipnMq9aVMQaBW-QnwaFJ9y_LulFzko24Cl_632vNNx7GvRAnHePL0s-YK8UOXoXAEEQ&usqp=CAU"/>
+        </div>
+        <div class="wide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuelcwfFxNC5LKqoSlJbrPTr8P2ioQdV8zZPAOpmgyK_7EXxZn8IgHIvbrpYSmHnWLScc&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFfYzF24pufeihCuHt96HIz1clt9gVOoUKQt0sTRXsYHFOPz8QZhIVuELQIaranORjZXk&usqp=CAU"/>
+        </div>
+        <div class="tall">
+            <img src="https://images.unsplash.com/photo-1490077476659-095159692ab5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bXlhbm1hcnxlbnwwfHwwfHw%3D&w=1000&q=80"/>
+        </div>
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2luZ2Fwb3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgKYWcqISy2vbAyx7e4zaulqSL2VT7_nxBduRN9UgaB8kNGceHwmyelaRoQ0Cbcthj5yM&usqp=CAU"/>
+        </div>
+        <div class="wide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR9SaIMMBekHJthUn2FveP8qNp3OWyb-jo8w&usqp=CAU"/>
+        </div>
+        <div class="big">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_Q1fPeVL7Zp8foUt-_B08yytTjr2RvOnWg&usqp=CAU"/>
+        </div>
+        <div class="tall">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3tEiHD0zyp0-FLs6YRm7LQjeLDOuYsJ3Jw&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDlSqZr-HULfC7Kr6lYdTGRpI64sDYZXhfA&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLCf9o-xARpdEl6fyP5TpEZZUCe_g-IX8DTw&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpwQwLCHWRH78tbhwM6egNPaxfbgoBExO6w&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSevFuD0np2fWK8PbrK7o8JHZAhp5JPaeCm3A&usqp=CAU"/>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1653764710706-7bd5f7c630ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1654056025914-5b18af3880d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div class="wide">
+            <img  src="https://images.unsplash.com/photo-1653764937954-6dfce0487569?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3N3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1654044331015-f2bc89997b42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1653764855769-42728df0f7f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div class="wide">
+            <img src="https://images.unsplash.com/photo-1654015969220-d1174cfa9719?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1654002071566-bce522037f17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div class="wide">
+            <img src="https://images.unsplash.com/photo-1653765000011-de1f5cad4fba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxODh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1653959023171-746709105833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"/>
+        </div>
+        <body>
+            </html>

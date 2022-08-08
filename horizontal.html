@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <Meta charset="UTF-8">
+            <meta http-equiv="x-UA-compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Horizontal Bar</title>
+    </head>
+    <style>
+        body {margin: 0;}
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            top: 0;
+            position: sticky;
+            width: 100%;
+        }
+        li{
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px;
+            background-color: rgb(12, 12, 12);
+        }
+        li.a.active{
+            background-color:rgb(53, 241, 53);
+            color:white;
+        }
+        li.a.hover:not(.active) {
+            background-color: #555;
+            color:white;
+        }
+    </style>
+    <body>
+        <h1 style="padding: ;10px">CSS Animation</h1>
+        <h2>keyframes</h2>
+        <h2>Animation</h2>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li> 
+            <li><a href="about">About Us</a> </li> 
+            <li><a href="#products">Our products</a></li> 
+            <li><a href="#careers">Careers</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+        <div style="padding: 20px; margin-top:10px;height:1500px;">
+            <h3>CSS Animation</h3>
+            <p>CSS Animation is a techniqe used to change the appearance and behavior of various elements in wed peges.
+                It will control the elements by changinng their motions or display.
+                It has replaced the Animation created by flash and javascript.
+                the animation is created  using the @keyframe rule.</p>
+                <p>It has two parts 
+                    CSS properties (describe the animation of the elements)
+                    keyframes(specific time intervals at which the animation have to occur)
+                    when the animation is created in the @keyframerule,it must have
+                    a selector otherwise , the animation will have no effect.</p>
+                    <p>@keyframe
+                        keyframes are the foundation of CSS Animation
+                        It will control the intermediate steps in a CSS animation sequence
+                        It defines the display animation at the  corresponding
+                        stages in the Whole duration</p>
+        </div>       
+    </body>
+</html>
+ 

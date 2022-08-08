@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <Meta charset="UTF-8">
+            <meta http-equiv="x-UA-compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+            <title>Vartical Navigation</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color:#f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li.a.active{
+            background: color #04aa6d;;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+    
+    </style>
+    <body>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li> 
+            <li><a href="about">About Us</a> </li> 
+            <li><a href="#products">Our products</a></li> 
+            <li><a href="#careers">Careers</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+        </ul>
+        <div style="margin-left:25%; padding:1px 16px; height:1000px;">
+            <p>list-style-type:none;-removes the bullets.</p>
+            <p>A navigation bar does not need list markers</p>
+            <p>Set margin:0;and padding:0; to remove browser default settings</p>
+            <p>In a real web site instead of href="#" we would be using URLs.</p></div>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="myStyle.css" type="text/css">
+        <Meta charset="UTF-8">
+            <meta http-equiv="x-UA-compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>NAVBAR AND MEDIA QUERY</title>
+    </head>
+    <style>
+
+        *{
+            margin: 0;
+            paddinng:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5px;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+
+      nav>  .left-icon-container > h1{
+          padding-left: 30px;
+          text-transform: uppercase;
+          font-weight: 800;
+      }
+
+      nav > .right-icon-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      nav > .right-icon-container >a{
+          margin: 20px;
+          font-size: 1.1rem;
+          text-decoration: none;
+          color: #111;
+          transition: 0.7s;
+      }
+
+      nav>.right-icon-container>a:hover{
+          color:darkgray;
+          opacity: 0.9;
+      }
+      nav > .right-icon-container>a:last-child{
+          margin-right: 50px;
+      }
+      .card-container{
+
+          margin-top: 5rem;
+          display: grid;
+          grid-template-columns: repeat(3 1frm);
+      }
+      .card>img{
+          max-width: 400px;
+          margin-left: 20px;
+          text-align: center;
+
+      }
+
+      @media  screen and (max-width:768px){
+        .card-container{
+            display: block;
+            text-align: center;
+        }
+      }
+
+    </style>
+
+    <body>
+        <!--learn making the navbar-->
+
+
+        <nav>
+            <div class="left-icon-container">
+                <h1>Navbar</h1>
+            </div>
+            <div class="right-icon-container">
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <div class="card-container">
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div><div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+        <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/1376490.jpg"/>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS  Grid</title>
+    </head>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px ;
+            grid-gap: 10px;
+        }
+
+        .grid-container > div{
+            background: lightpink;
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: 1/5;
+        }
+
+        .item2{
+            grid-row: 2/5;
+        }
+
+        .item3{
+            grid-row: 2/5;
+            grid-column: 2/5;
+        }
+        .item4{
+            grid-column: 1/5;
+        }
+    </style>
+    <body>
+        <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2"> Side bar</div>
+        <div class="item3"> Main containt</div>
+        <div class="irtem4">Footer</div>
+        </div>
+        <Script src="Script.js"></Script>
+    </body>
+</html>
